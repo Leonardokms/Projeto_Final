@@ -11,13 +11,13 @@ public class RPGManageBotoes : MonoBehaviour
     /* Reinicia o jogo, levando para o inicio do jogo */
     public void ReiniciarJogo()                     
     {
-        SceneManager.LoadScene("Lab5_RPGSetup");
+        SceneManager.LoadScene("Cena_Fase1");
     }
 
     /* Inicia a tela de créditos */
     public void Creditos()
     {
-        SceneManager.LoadScene("Lab5_Creditos");
+        SceneManager.LoadScene("Cena_Creditos");
     }
 
     /* Fecha o modo de teste da aplicação */

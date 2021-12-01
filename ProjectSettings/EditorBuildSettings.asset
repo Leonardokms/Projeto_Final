@@ -6,6 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Cena_Teste.unity
+    path: Assets/Scenes/Cena_Fase1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Teste.unity
+    guid: d863ab1cd2176cd4382911021a43cfbb
+  - enabled: 1
+    path: Assets/Scenes/Cena_Creditos.unity
+    guid: 76414d5a1c2a7e44eb206ce108a9f48f
+  - enabled: 1
+    path: Assets/Scenes/Cena_Vitoria.unity
+    guid: 1fe31020acb9b164b95fc41f5208b2b6
+  - enabled: 1
+    path: Assets/Scenes/Cena_Game_Over.unity
+    guid: 3197992b5269a344583e294c9b738691
+  - enabled: 1
+    path: Assets/Scenes/Cena_Fase2.unity
+    guid: 59276b9922ceaec4e89e98f0fd9adf18
   m_configObjects: {}

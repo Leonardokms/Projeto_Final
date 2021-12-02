@@ -8,7 +8,7 @@ public class PlayerAtacar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        camera = GameObject.Find("Main Camera").GetComponent<Camera>();
     }
 
     // Update is called once per frame

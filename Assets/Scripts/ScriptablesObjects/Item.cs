@@ -14,12 +14,12 @@ public class Item : ScriptableObject
 	/* Enumera os tipos de item possíveis */
     public enum TipoItem
     {
-        MOEDA,
-        HEALTH,
-        PEIXE,
-        BOMBA,
-        DISCO,
-        GARRAFA
+        GOLD,
+        CORACAO,
+        BOTAS,
+        ESCUDO,
+        ESPADA,
+        POCAO
     }
 
     public TipoItem tipoItem;

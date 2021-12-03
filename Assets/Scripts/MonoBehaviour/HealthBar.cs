@@ -9,7 +9,7 @@ public class HealthBar : MonoBehaviour
     public Player caractere;        // receberá o objeto do Player 
     public Image medidorImagem;     // recebe a barra de medição
     public Text pdTexto;            // recebe os dados de PD
-    float maxPontosDano;            // armazena a variável limite de "sáude" do Player
+    public float maxPontosDano;            // armazena a variável limite de "sáude" do Player
 
     // Start is called before the first frame update
 	/* Define a quantidade de vida máxima do personagem */
@@ -24,8 +24,9 @@ public class HealthBar : MonoBehaviour
     {
         if(caractere != null)
         {
+            maxPontosDano = caractere.MaxPontosDano;
             medidorImagem.fillAmount = pontosDano.valor / maxPontosDano;
-            pdTexto.text = "PD:" + (medidorImagem.fillAmount * 100); 
+            pdTexto.text = "PD:" + (pontosDano.valor * 10); 
         }
     }
 }

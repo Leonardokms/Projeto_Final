@@ -76,7 +76,8 @@ public class Player : Caractere
 	 * Se for uma moeda, adiciona ao inventário. 
 	 * Se for um coração, cura a vida do personagem.
 	 * Ao final, faz o item desaparecer se for o caso.*/
-	private void OnTriggerEnter2D(Collider2D collision)
+	
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.CompareTag("Coletavel"))
         {
@@ -86,29 +87,31 @@ public class Player : Caractere
             if (DanoObjeto != null)
             {
                 bool DeveDesaparecer = false;
-
+            
                 switch (DanoObjeto.tipoItem)
                 {
-                    case Item.TipoItem.MOEDA:
-                        //DeveDesaparecer = true;
+                    case Item.TipoItem.GOLD:
                         DeveDesaparecer = inventario.AddItem(DanoObjeto);
                         break;
 
-                    case Item.TipoItem.PEIXE:
+                    case Item.TipoItem.BOTAS:
+                        this.GetComponent<MovPlayer>().Vel += 50;
                         DeveDesaparecer = inventario.AddItem(DanoObjeto);
                         break;
 
-                    case Item.TipoItem.BOMBA:
+                    case Item.TipoItem.ESCUDO:
                         DeveDesaparecer = inventario.AddItem(DanoObjeto);
                         break;
 
-                    case Item.TipoItem.GARRAFA:
+                    case Item.TipoItem.ESPADA:
                         DeveDesaparecer = inventario.AddItem(DanoObjeto);
                         break;
 
-                    case Item.TipoItem.DISCO:
+                    case Item.TipoItem.POCAO:
+                        MaxPontosDano += 1;
                         DeveDesaparecer = inventario.AddItem(DanoObjeto);
-                        break;
+                        break;     
+
 
                     default:
                         break;

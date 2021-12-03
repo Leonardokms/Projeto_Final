@@ -29,7 +29,7 @@ public class PlayerAtacar : MonoBehaviour
                 {
                     if (dis < 0.5f)
                     {
-                        hit.transform.GetComponent<InimigoBase>().ReceberDano(1);
+                        //hit.transform.GetComponent<InimigoBase>().ReceberDano(1);
                     }
                 }
             }

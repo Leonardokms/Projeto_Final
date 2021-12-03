@@ -11,8 +11,8 @@ public class AtiradorParado : MonoBehaviour
 	
 	
 	
-	private Vector2 zero = new Vector2(0,0);
-	private int framesSinceShot;
+	private Vector2 zero = new Vector2(0,0); //Instancia um Vector2 nulo
+	private int framesSinceShot; //
 	public int shotfreq;
 	public Rigidbody2D projectile;
 	private Rigidbody2D shot;
@@ -20,7 +20,7 @@ public class AtiradorParado : MonoBehaviour
 	public float alcance;
 	
 	
-	
+    // Recebe o Rigidbody2D do gameObject ao qual este componente está conectado. Busca também um objeto que tenha o script Player e seu Transform.
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +29,8 @@ public class AtiradorParado : MonoBehaviour
 		jogador = GameObject.FindObjectOfType<Player>();
 		jogadorTransf = jogador.gameObject.GetComponent<Transform>();
     }
-
+	
+    // Incrementa o contador de frames desde o último tiro
     // Update is called once per frame
     void Update()
     {

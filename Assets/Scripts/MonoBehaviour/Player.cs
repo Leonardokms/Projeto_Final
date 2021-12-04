@@ -9,6 +9,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : Caractere
 {
+    public int Vida;
     public Inventario inventarioPrefab;     // referência ao objeto prefab criado do Inventário
     Inventario inventario;
     public HealthBar healthBarPrefab;       // referência ao objeto prefab criado da HealthBar

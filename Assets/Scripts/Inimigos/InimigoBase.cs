@@ -11,53 +11,59 @@ public class InimigoBase : MonoBehaviour
 	private bool paralisado;
 	public int tempoDeParalisia;
 	private int framesDesdeDano;
-	private int framesDesdeAtaque;	
+	private int framesDesdeAtaque;
+	private Color startColor;
+	
 	private bool andando;
 	private SpriteRenderer thisSprite;
 	private Animator thisAnimator;
-	private GameObject p1;
+	Coroutine danoCorountine;
+	
     // Start is called before the first frame update
     void Start()
     {
+		
         thisBody = this.gameObject.GetComponent<Rigidbody2D>();
 		thisSprite = this.gameObject.GetComponent<SpriteRenderer>();
 		thisAnimator = this.gameObject.GetComponent<Animator>();
-		p1 = GameObject.FindGameObjectWithTag("Player");
+		startColor = thisSprite.color;
+		
 		VidaAtual = Vida;
 		paralisado = false;
     }
 	
-	void OnCollisionEnter2D(Collision2D collision)
+	    /* Ao colidir com o jogador, aplica dano chamando a corrotina DanoCaractere. */
+    void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             Player player = collision.gameObject.GetComponent<Player>();
-			if (p1.GetComponent<Player>().escudo == true)
+            if (danoCorountine == null)
             {
-				player.pontosDano.valor = player.pontosDano.valor - (dano/2);
-			}
-			else
-            {
-				player.pontosDano.valor = player.pontosDano.valor - dano;
-			}
-		}	
+                print("DANO!!");
+                danoCorountine = StartCoroutine(player.DanoCaractere(dano, 1.0f));
+            }
+        }
     }
-	
-	void OnCollisionStay2D(Collision2D collision)
+
+    /* Finaliza a corrotina DanoCaractere quando para de colidir com o jogador */
+    void OnCollisionExit2D(Collision2D collision)
     {
-		framesDesdeAtaque++;
-        if (collision.gameObject.CompareTag("Player") && framesDesdeAtaque > 40)
+        if (collision.gameObject.CompareTag("Player"))
         {
-            Player player = collision.gameObject.GetComponent<Player>();
-            player.Vida = player.Vida - dano;
-			framesDesdeAtaque = 0;
-        }	
+            if (danoCorountine != null)
+            {
+                StopCoroutine(danoCorountine);
+                danoCorountine = null;
+            }
+        }
     }
 	
 	public void ReceberDano(int danoRecebido){
 		VidaAtual = VidaAtual - danoRecebido;
 		framesDesdeDano = 0;
 		paralisado = true;
+		thisSprite.color = Color.red;
 	}
 	
     // Update is called once per frame
@@ -66,6 +72,7 @@ public class InimigoBase : MonoBehaviour
 		framesDesdeDano++;
 		if(framesDesdeDano >= tempoDeParalisia){
 			paralisado = false;
+			thisSprite.color = startColor;
 		}
         if(VidaAtual <= 0)
 		{
@@ -81,7 +88,9 @@ public class InimigoBase : MonoBehaviour
 		}else{
 			thisSprite.flipX = false;
 		}
-		thisAnimator.SetBool("andando", andando);
+		if(thisAnimator != null){
+			thisAnimator.SetBool("andando", andando);
+		}
     }
 	
 	public void SetParalisia(bool paralisar){

@@ -17,7 +17,14 @@ public class Player : Caractere
     int contador;                           // contador de itens restantes
     public PontosDano pontosDano;           // tem o valor da "saúde" do objeto script
     public bool escudo;
-    
+    public ParticleSystem particulasAndar;
+	private Renderer particulasRenderer;
+	
+	private bool andando;
+	private SpriteRenderer thisSprite;
+	private Animator thisAnimator;
+	private Rigidbody2D thisBody;
+	
 	/* Assim que o script inicia, instancia um inventário para o jogador, define seus pontos de vida, 
 	 * instancia uma barra de vida para o jogador e associa	este caractere à barra de vida criada */
 	private void Start()
@@ -30,6 +37,14 @@ public class Player : Caractere
         objetos = GameObject.FindGameObjectsWithTag("Coletavel");
         contador = objetos.Length;
         escudo = false;
+		
+		particulasRenderer = particulasAndar.gameObject.GetComponent<Renderer>();
+		particulasRenderer.sortingLayerName = "Caracteres";
+		particulasRenderer.sortingOrder = 1;
+		
+		thisBody = this.gameObject.GetComponent<Rigidbody2D>();
+		thisSprite = this.gameObject.GetComponent<SpriteRenderer>();
+		thisAnimator = this.gameObject.GetComponent<Animator>();
     }
 
     private void Update()
@@ -39,6 +54,23 @@ public class Player : Caractere
             KillCaractere();
             SceneManager.LoadScene("Cena_Game_Over");
         }
+		
+		
+		if((thisBody.velocity.x != 0 || thisBody.velocity.y != 0)){
+			andando = true;
+			particulasAndar.Play();
+		}else{
+			andando = false;
+			particulasAndar.Stop();
+		}
+		if(thisBody.velocity.x > 0){
+			thisSprite.flipX = true;
+		}else if(thisBody.velocity.x < 0){
+			thisSprite.flipX = false;
+		}
+		if(thisAnimator != null){
+			thisAnimator.SetBool("andando", andando);
+		}
     }
     /* Ao receber dano, inicia a corrotina FlickerCaractere e diminui a vida do jogador. 
 	 * Se a vida cair abaixo de 0, destrói o objeto e carrega a cena de GameOver. */

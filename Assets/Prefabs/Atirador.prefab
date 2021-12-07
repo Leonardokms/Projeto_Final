@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 7124707645886578923}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -7.75, y: 2.95, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -136,8 +136,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -118329779
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -5295284367952286343, guid: c87610f6e61491847ac4a50c6887a3aa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -184,7 +184,7 @@ MonoBehaviour:
   shotfreq: 300
   projectile: {fileID: 4011605003706153818, guid: 2dfdab1fecef32e4a840e68f936c4f6c, type: 3}
   shotspeed: 3
-  alcance: 10
+  alcance: 7
 --- !u!114 &7124707645886578899
 MonoBehaviour:
   m_ObjectHideFlags: 0

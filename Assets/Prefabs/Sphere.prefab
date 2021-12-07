@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -3183631689917389884}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,7 +72,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.49999997
+  m_Radius: 0.1
 --- !u!114 &10254733514103445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,7 +86,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 1
-  dano: 1
+  dano: 0
   tempoDeParalisia: 0
 --- !u!114 &531785646082088354
 MonoBehaviour:
@@ -101,6 +101,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duracaoProjetil: 4
+  velocidadeRotacao: 5
+  dano: 1
 --- !u!212 &-5251173724961708945
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -138,8 +140,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -118329779
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 89ee260e6da171b4ab0402104d28f22d, type: 3}
   m_Color: {r: 0.69888806, g: 1, b: 0, a: 1}

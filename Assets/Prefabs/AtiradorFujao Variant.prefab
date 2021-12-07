@@ -25,7 +25,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1502421176493060283, guid: 3e7b28b8be99b2f41ba1527cfdb377c2, type: 3}
       propertyPath: m_Name
-      value: AtiradorFujao
+      value: AtiradorFujao Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1502421176493060284, guid: 3e7b28b8be99b2f41ba1527cfdb377c2, type: 3}
       propertyPath: m_RootOrder
@@ -33,11 +33,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1502421176493060284, guid: 3e7b28b8be99b2f41ba1527cfdb377c2, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.5
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 1502421176493060284, guid: 3e7b28b8be99b2f41ba1527cfdb377c2, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.5
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1502421176493060284, guid: 3e7b28b8be99b2f41ba1527cfdb377c2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1502421176493060284, guid: 3e7b28b8be99b2f41ba1527cfdb377c2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -90,6 +94,14 @@ PrefabInstance:
     - target: {fileID: 1502421176493060290, guid: 3e7b28b8be99b2f41ba1527cfdb377c2, type: 3}
       propertyPath: m_Color.r
       value: 0.7924528
+      objectReference: {fileID: 0}
+    - target: {fileID: 1502421176493060290, guid: 3e7b28b8be99b2f41ba1527cfdb377c2, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1502421176493060290, guid: 3e7b28b8be99b2f41ba1527cfdb377c2, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -118329779
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e7b28b8be99b2f41ba1527cfdb377c2, type: 3}

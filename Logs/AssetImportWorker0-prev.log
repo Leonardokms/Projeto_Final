@@ -15,11 +15,11 @@ D:/Projetos Unity/Projeto_Final
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-63917
+64049
 Successfully changed project path to: D:/Projetos Unity/Projeto_Final
 D:/Projetos Unity/Projeto_Final
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 30.99 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 32.91 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.3f1 (76626098c1c4)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/Resources/UnitySubsystems
@@ -35,247 +35,55 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56656
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56504
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001356 seconds.
+Registered in 0.001347 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 32.20 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 31.45 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.793 seconds
+- Completed reload, in  0.794 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001403 seconds.
+Registered in 0.001385 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 31.71 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 31.53 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.775 seconds
+- Completed reload, in  0.750 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.15 seconds
-Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.25 seconds
+Refreshing native plugins compatible for Editor in 0.43 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2267 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 98.8 MB.
 System memory in use after: 99.0 MB.
 
 Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 2708.
-Total: 2.015300 ms (FindLiveObjects: 0.202500 ms CreateObjectMapping: 0.071700 ms MarkObjects: 1.694500 ms  DeleteObjects: 0.045500 ms)
+Total: 1.917100 ms (FindLiveObjects: 0.187000 ms CreateObjectMapping: 0.080400 ms MarkObjects: 1.603100 ms  DeleteObjects: 0.045900 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Musica/Christmas Music by Infraction Christmas Instrumental [No Copyright Music] [Free Download].mp3
-  artifactKey: Guid(f135b943fce020947848a4a2979fb93c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Musica/Christmas Music by Infraction Christmas Instrumental [No Copyright Music] [Free Download].mp3 using Guid(f135b943fce020947848a4a2979fb93c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0ca21ae35cd699aec925fc911a3f750') in 0.076473 seconds
-  Import took 0.079165 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000131 seconds.
-  path: Assets/Musica/Upbeat Christmas Background Music For Videos Royalty Free - A Merry Christmas.mp3
-  artifactKey: Guid(4667f7666bf6db747823afc5c2860f4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Musica/Upbeat Christmas Background Music For Videos Royalty Free - A Merry Christmas.mp3 using Guid(4667f7666bf6db747823afc5c2860f4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f97750c5b17130ea41da93a43e1af533') in 0.008098 seconds
-  Import took 0.010270 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.392512 seconds.
-  path: Assets/Musica/Musica_Creditos.mp3
-  artifactKey: Guid(f135b943fce020947848a4a2979fb93c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Musica/Musica_Creditos.mp3 using Guid(f135b943fce020947848a4a2979fb93c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca57a6c230b6e1817627558b634977e6') in 0.009571 seconds
-  Import took 0.012461 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001563 seconds.
-  path: Assets/Musica/Musica_Creditos.mp3
-  artifactKey: Guid(f135b943fce020947848a4a2979fb93c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Musica/Musica_Creditos.mp3 using Guid(f135b943fce020947848a4a2979fb93c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca57a6c230b6e1817627558b634977e6') in 0.007246 seconds
-  Import took 0.009744 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.862720 seconds.
-  path: Assets/Musica/Musica_Vitoria.mp3
-  artifactKey: Guid(4667f7666bf6db747823afc5c2860f4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Musica/Musica_Vitoria.mp3 using Guid(4667f7666bf6db747823afc5c2860f4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c519689b7e1d3c72dc78fbf54fe77bb') in 0.007347 seconds
-  Import took 0.010424 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000417 seconds.
-  path: Assets/Musica/Musica_Vitoria.mp3
-  artifactKey: Guid(4667f7666bf6db747823afc5c2860f4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Musica/Musica_Vitoria.mp3 using Guid(4667f7666bf6db747823afc5c2860f4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c519689b7e1d3c72dc78fbf54fe77bb') in 0.006273 seconds
-  Import took 0.008592 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 86.399313 seconds.
-  path: Assets/Musica/Christmas-Music-by-Infraction-Ch.mp3
-  artifactKey: Guid(026684d8b8ed25345a0f8ccbda7f8002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Musica/Christmas-Music-by-Infraction-Ch.mp3 using Guid(026684d8b8ed25345a0f8ccbda7f8002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1bb80b476545c5e986854edc86b285c') in 0.008834 seconds
-  Import took 0.011514 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 78.908867 seconds.
-  path: Assets/Prefabs/MusicManagerCreditos.prefab
-  artifactKey: Guid(b1431b8d7d04d12409dd425c96ba4962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/MusicManagerCreditos.prefab using Guid(b1431b8d7d04d12409dd425c96ba4962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e92e15cabd98b1215dfad4ccb5aa71e') in 0.010497 seconds
-  Import took 0.013502 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.007465 seconds.
-  path: Assets/Prefabs/MusicManagerCreditos.prefab
-  artifactKey: Guid(b1431b8d7d04d12409dd425c96ba4962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/MusicManagerCreditos.prefab using Guid(b1431b8d7d04d12409dd425c96ba4962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e92e15cabd98b1215dfad4ccb5aa71e') in 0.002128 seconds
-  Import took 0.004346 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.619104 seconds.
-  path: Assets/Prefabs/MusicManagerDerrota.prefab
-  artifactKey: Guid(4dbf80cb3ce380c4c828519de8d9e437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/MusicManagerDerrota.prefab using Guid(4dbf80cb3ce380c4c828519de8d9e437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0a042e309c1e6ce88897f0bbc210dba') in 0.002220 seconds
-  Import took 0.004736 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.011063 seconds.
-  path: Assets/Prefabs/MusicManagerDerrota.prefab
-  artifactKey: Guid(4dbf80cb3ce380c4c828519de8d9e437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/MusicManagerDerrota.prefab using Guid(4dbf80cb3ce380c4c828519de8d9e437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0a042e309c1e6ce88897f0bbc210dba') in 0.002119 seconds
-  Import took 0.004334 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.193932 seconds.
-  path: Assets/Prefabs/MusicManagerFase1.prefab
-  artifactKey: Guid(bc1952803589f294f9db029d32a1b97d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/MusicManagerFase1.prefab using Guid(bc1952803589f294f9db029d32a1b97d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '284be46a7cc826d662f2d27e86d224bd') in 0.002513 seconds
-  Import took 0.005338 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001608 seconds.
-  path: Assets/Prefabs/MusicManagerFase1.prefab
-  artifactKey: Guid(bc1952803589f294f9db029d32a1b97d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/MusicManagerFase1.prefab using Guid(bc1952803589f294f9db029d32a1b97d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '284be46a7cc826d662f2d27e86d224bd') in 0.001968 seconds
-  Import took 0.003988 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.403803 seconds.
-  path: Assets/Prefabs/MusicManagerFase1.prefab
-  artifactKey: Guid(bc1952803589f294f9db029d32a1b97d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/MusicManagerFase1.prefab using Guid(bc1952803589f294f9db029d32a1b97d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a089c0ef27ce2267d3fea88f9a78896f') in 0.002261 seconds
-  Import took 0.004832 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001247 seconds.
-  path: Assets/Prefabs/MusicManagerFase1.prefab
-  artifactKey: Guid(bc1952803589f294f9db029d32a1b97d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/MusicManagerFase1.prefab using Guid(bc1952803589f294f9db029d32a1b97d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a089c0ef27ce2267d3fea88f9a78896f') in 0.001803 seconds
-  Import took 0.003736 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.396752 seconds.
-  path: Assets/Prefabs/MusicManagerFase1.prefab
-  artifactKey: Guid(bc1952803589f294f9db029d32a1b97d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/MusicManagerFase1.prefab using Guid(bc1952803589f294f9db029d32a1b97d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7df4be9288401b6209b96cc5b2c7011') in 0.002442 seconds
-  Import took 0.005384 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001585 seconds.
-  path: Assets/Prefabs/MusicManagerFase1.prefab
-  artifactKey: Guid(bc1952803589f294f9db029d32a1b97d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/MusicManagerFase1.prefab using Guid(bc1952803589f294f9db029d32a1b97d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7df4be9288401b6209b96cc5b2c7011') in 0.002283 seconds
-  Import took 0.004761 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.843784 seconds.
-  path: Assets/Prefabs/MusicManagerVitoria.prefab
-  artifactKey: Guid(05be2d68827971d4b891508ad6b5b514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/MusicManagerVitoria.prefab using Guid(05be2d68827971d4b891508ad6b5b514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9433b4506f5d6aeb13cad2f96159e45') in 0.002307 seconds
-  Import took 0.005024 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001243 seconds.
-  path: Assets/Prefabs/MusicManagerVitoria.prefab
-  artifactKey: Guid(05be2d68827971d4b891508ad6b5b514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/MusicManagerVitoria.prefab using Guid(05be2d68827971d4b891508ad6b5b514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9433b4506f5d6aeb13cad2f96159e45') in 0.002112 seconds
-  Import took 0.004265 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.716062 seconds.
-  path: Assets/Musica/Musica_Derrota.mp3
-  artifactKey: Guid(c578c8589a89b284db686afa2a5109d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Musica/Musica_Derrota.mp3 using Guid(c578c8589a89b284db686afa2a5109d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17d13bb8c36d6bcba1085976a002199d') in 0.007423 seconds
-  Import took 0.022756 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.851758 seconds.
-  path: Assets/Musica/Musica_Jogand.mp3
-  artifactKey: Guid(8cf49a914dde87b41aca46b4f0802e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Musica/Musica_Jogand.mp3 using Guid(8cf49a914dde87b41aca46b4f0802e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a3763db8365da23c670d9a19c20bbbd') in 0.007405 seconds
-  Import took 0.010108 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002464 seconds.
-  path: Assets/Musica/Musica_Jogand.mp3
-  artifactKey: Guid(8cf49a914dde87b41aca46b4f0802e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Musica/Musica_Jogand.mp3 using Guid(8cf49a914dde87b41aca46b4f0802e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a3763db8365da23c670d9a19c20bbbd') in 0.006755 seconds
-  Import took 0.009001 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.137613 seconds.
-  path: Assets/Musica/Musica_Jogando.mp3
-  artifactKey: Guid(8cf49a914dde87b41aca46b4f0802e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Musica/Musica_Jogando.mp3 using Guid(8cf49a914dde87b41aca46b4f0802e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c20b8c5418a95e9f85e405bb4c9a07ae') in 0.007295 seconds
-  Import took 0.009959 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002789 seconds.
-  path: Assets/Musica/Musica_Jogando.mp3
-  artifactKey: Guid(8cf49a914dde87b41aca46b4f0802e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Musica/Musica_Jogando.mp3 using Guid(8cf49a914dde87b41aca46b4f0802e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c20b8c5418a95e9f85e405bb4c9a07ae') in 0.004414 seconds
-  Import took 0.006555 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.351570 seconds.
-  path: Assets/Prefabs/MusicManagerJogando.prefab
-  artifactKey: Guid(bc1952803589f294f9db029d32a1b97d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/MusicManagerJogando.prefab using Guid(bc1952803589f294f9db029d32a1b97d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0e2b26d58e261b2dfcf7992c93ae839') in 0.005107 seconds
-  Import took 0.111711 seconds .
+  path: Assets/Scenes/Cena_Vitoria.unity
+  artifactKey: Guid(1fe31020acb9b164b95fc41f5208b2b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Cena_Vitoria.unity using Guid(1fe31020acb9b164b95fc41f5208b2b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a535027cdd63b9db94b6719a29032141') in 0.012880 seconds
+  Import took 0.015443 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001396 seconds.
+Registered in 0.001316 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
@@ -284,118 +92,15 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.686 seconds
+- Completed reload, in  0.690 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.21 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.26 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2255 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 101.3 MB.
-System memory in use after: 101.4 MB.
+System memory in use before: 98.1 MB.
+System memory in use after: 98.3 MB.
 
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2720.
-Total: 1.858600 ms (FindLiveObjects: 0.151500 ms CreateObjectMapping: 0.053100 ms MarkObjects: 1.641100 ms  DeleteObjects: 0.012400 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 133.624623 seconds.
-  path: Assets/Prefabs/MusicManagerVitoria.prefab
-  artifactKey: Guid(05be2d68827971d4b891508ad6b5b514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/MusicManagerVitoria.prefab using Guid(05be2d68827971d4b891508ad6b5b514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9e9162c289abd298d2746f766e11099') in 0.016807 seconds
-  Import took 0.019472 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.007265 seconds.
-  path: Assets/Prefabs/MusicManagerVitoria.prefab
-  artifactKey: Guid(05be2d68827971d4b891508ad6b5b514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/MusicManagerVitoria.prefab using Guid(05be2d68827971d4b891508ad6b5b514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c583f66c5256b7c1f48f3e7bd1c53bb') in 0.002415 seconds
-  Import took 0.005048 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/Prefabs/MusicManagerVitoria.prefab
-  artifactKey: Guid(05be2d68827971d4b891508ad6b5b514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/MusicManagerVitoria.prefab using Guid(05be2d68827971d4b891508ad6b5b514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c583f66c5256b7c1f48f3e7bd1c53bb') in 0.001884 seconds
-  Import took 0.003610 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.896178 seconds.
-  path: Assets/Prefabs/MusicManagerJogando.prefab
-  artifactKey: Guid(bc1952803589f294f9db029d32a1b97d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/MusicManagerJogando.prefab using Guid(bc1952803589f294f9db029d32a1b97d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '378104b20a9c1acfbb6740dc1fbc01ac') in 0.002590 seconds
-  Import took 0.005612 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.592725 seconds.
-  path: Assets/Prefabs/MusicManagerDerrota.prefab
-  artifactKey: Guid(4dbf80cb3ce380c4c828519de8d9e437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/MusicManagerDerrota.prefab using Guid(4dbf80cb3ce380c4c828519de8d9e437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2d7cbbf716ff84654ceb96f27a0fe47') in 0.002363 seconds
-  Import took 0.004874 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.861180 seconds.
-  path: Assets/Prefabs/MusicManagerCreditos.prefab
-  artifactKey: Guid(b1431b8d7d04d12409dd425c96ba4962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/MusicManagerCreditos.prefab using Guid(b1431b8d7d04d12409dd425c96ba4962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad2dae50168ac43638a4e0b00cd821c6') in 0.002370 seconds
-  Import took 0.005014 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001303 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.678 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.24 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2255 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 101.4 MB.
-System memory in use after: 101.6 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2723.
-Total: 2.007600 ms (FindLiveObjects: 0.180900 ms CreateObjectMapping: 0.055500 ms MarkObjects: 1.756500 ms  DeleteObjects: 0.014000 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 21.402237 seconds.
-  path: Assets/Scenes/Cena_Game_Over.unity
-  artifactKey: Guid(3197992b5269a344583e294c9b738691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Cena_Game_Over.unity using Guid(3197992b5269a344583e294c9b738691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '278aa450bc29af934f2c95cb66bec8ab') in 0.011998 seconds
-  Import took 0.015173 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.143826 seconds.
-  path: Assets/Scenes/Cena_Fase1.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Cena_Fase1.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da37897364fbadcf84a0b52110c62fec') in 0.004300 seconds
-  Import took 0.007195 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.498311 seconds.
-  path: Assets/Scenes/Cena_Creditos.unity
-  artifactKey: Guid(76414d5a1c2a7e44eb206ce108a9f48f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Cena_Creditos.unity using Guid(76414d5a1c2a7e44eb206ce108a9f48f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd75bc74b3bb3c2e17550d6e1009afdea') in 0.004447 seconds
-  Import took 0.021009 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 41.821269 seconds.
-  path: Assets/Sprites/Ladrilhos/Externos/Natal
-  artifactKey: Guid(153d8f638aee60f42b2854aa33dc1053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Ladrilhos/Externos/Natal using Guid(153d8f638aee60f42b2854aa33dc1053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c86d2191e6c367452fbf3481ef258e25') in 0.005017 seconds
-  Import took 0.007861 seconds .
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2711.
+Total: 1.871700 ms (FindLiveObjects: 0.166400 ms CreateObjectMapping: 0.054000 ms MarkObjects: 1.639000 ms  DeleteObjects: 0.011500 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

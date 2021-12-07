@@ -26,6 +26,7 @@ public class Inimigo : Caractere
             Player player = collision.gameObject.GetComponent<Player>();
             if (danoCorountine == null)
             {
+                print("DANO!!");
                 danoCorountine = StartCoroutine(player.DanoCaractere(forcaDano, 1.0f));
             }
         }

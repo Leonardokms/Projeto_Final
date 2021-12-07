@@ -16,6 +16,7 @@ public class Player : Caractere
     HealthBar healthBar;
     int contador;                           // contador de itens restantes
     public PontosDano pontosDano;           // tem o valor da "saúde" do objeto script
+    public bool escudo;
     
 	/* Assim que o script inicia, instancia um inventário para o jogador, define seus pontos de vida, 
 	 * instancia uma barra de vida para o jogador e associa	este caractere à barra de vida criada */
@@ -28,11 +29,20 @@ public class Player : Caractere
         GameObject[] objetos;
         objetos = GameObject.FindGameObjectsWithTag("Coletavel");
         contador = objetos.Length;
+        escudo = false;
     }
-    
-	/* Ao receber dano, inicia a corrotina FlickerCaractere e diminui a vida do jogador. 
+
+    private void Update()
+    {
+        if (pontosDano.valor <= float.Epsilon)
+        {
+            KillCaractere();
+            SceneManager.LoadScene("Cena_Game_Over");
+        }
+    }
+    /* Ao receber dano, inicia a corrotina FlickerCaractere e diminui a vida do jogador. 
 	 * Se a vida cair abaixo de 0, destrói o objeto e carrega a cena de GameOver. */
-	public override IEnumerator DanoCaractere(int dano, float intervalo)
+    public override IEnumerator DanoCaractere(int dano, float intervalo)
     {
         while(true)
         {
@@ -101,6 +111,7 @@ public class Player : Caractere
                         break;
 
                     case Item.TipoItem.ESCUDO:
+                        escudo = true;
                         DeveDesaparecer = inventario.AddItem(DanoObjeto);
                         break;
 
@@ -125,14 +136,7 @@ public class Player : Caractere
                 
                 if(contador == 0)
                 {
-                    if (SceneManager.GetActiveScene().name == "Lab5_RPGSetup")
-                    {
-                        SceneManager.LoadScene("Lab5_CenaAdicional");
-                    }
-                    else if (SceneManager.GetActiveScene().name == "Lab5_CenaAdicional")
-                    {
-                        SceneManager.LoadScene("Lab5_Vitoria");
-                    }
+                    SceneManager.LoadScene("Cena_Vitoria");
                 }
             }
         }

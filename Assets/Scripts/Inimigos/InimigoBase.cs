@@ -11,18 +11,18 @@ public class InimigoBase : MonoBehaviour
 	private bool paralisado;
 	public int tempoDeParalisia;
 	private int framesDesdeDano;
-	private int framesDesdeAtaque;
-	
+	private int framesDesdeAtaque;	
 	private bool andando;
 	private SpriteRenderer thisSprite;
 	private Animator thisAnimator;
+	private GameObject p1;
     // Start is called before the first frame update
     void Start()
     {
         thisBody = this.gameObject.GetComponent<Rigidbody2D>();
 		thisSprite = this.gameObject.GetComponent<SpriteRenderer>();
 		thisAnimator = this.gameObject.GetComponent<Animator>();
-		
+		p1 = GameObject.FindGameObjectWithTag("Player");
 		VidaAtual = Vida;
 		paralisado = false;
     }
@@ -32,8 +32,15 @@ public class InimigoBase : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Player player = collision.gameObject.GetComponent<Player>();
-            player.Vida = player.Vida - dano;
-        }	
+			if (p1.GetComponent<Player>().escudo == true)
+            {
+				player.pontosDano.valor = player.pontosDano.valor - (dano/2);
+			}
+			else
+            {
+				player.pontosDano.valor = player.pontosDano.valor - dano;
+			}
+		}	
     }
 	
 	void OnCollisionStay2D(Collision2D collision)

@@ -363,6 +363,7 @@ MonoBehaviour:
   caractere: {fileID: 5906878252239801041, guid: 05887ee8269fdaa448e3748b8c6b25f0, type: 3}
   medidorImagem: {fileID: 7469560753970279605}
   pdTexto: {fileID: 2318820561661399901}
+  maxPontosDano: 0
 --- !u!1 &7115727481390834990
 GameObject:
   m_ObjectHideFlags: 0

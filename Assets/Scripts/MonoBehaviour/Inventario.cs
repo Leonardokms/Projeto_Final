@@ -12,7 +12,6 @@ public class Inventario : MonoBehaviour
     Item[] items = new Item[numSlots];          // array de items
     GameObject[] slots = new GameObject[numSlots]; // array de slots
 
-    // Start is called before the first frame update
 	/* Assim que o script inicia, chama o método CriaSlots. */
     void Start()
     {

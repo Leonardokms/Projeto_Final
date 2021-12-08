@@ -1,24 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Armazena e processa informações do clique do mouse para causar dano aos inimigos
+/// </summary>
 public class DanoMouse : MonoBehaviour
 {
-	public GameObject DamageZone;
-	public ParticleSystem Attack;
-	private Renderer AttackRenderer;
-	public ParticleSystem Fizzle;
-	private Renderer FizzleRenderer;
-	public float duracao;
-	public float alcance;
+	public GameObject DamageZone;		// Zona que causa dano, mostrada por partículas ao clicar
+	public ParticleSystem Attack;		// Partículas de ataque
+	private Renderer AttackRenderer;	// Renderer para ataque na tela
+	public ParticleSystem Fizzle;		// Partícula de ataque falho
+	private Renderer FizzleRenderer;	// Renderar para ataque falho na tela
+	public float duracao;				// Variável que armazena duração do ataque
+	public float alcance;				// Variável que armazena alcance do ataque
+
+	public Vector3 mousePosition;				// Posição do mouse
+	private Vector3 distanceMouseToPlayer;		// Distância entre mouse e jogador
+	private Player jogador;						// armazena Jogador
+	private Transform jogadorTransf;			// armazena transform do jogador
 	
-	public Vector3 mousePosition;
-	private Vector3 distanceMouseToPlayer;
-	private Player jogador;
-	private Transform jogadorTransf;
 	
-	
-    // Start is called before the first frame update
+    /* Inicializa componentes de renderização, mouse e player */
     void Start()
     {
 		jogador = GameObject.FindObjectOfType<Player>();
@@ -33,28 +35,36 @@ public class DanoMouse : MonoBehaviour
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
     }
 
-    // Update is called once per frame
+    /* Caso o jogador não seja nulo, verifica se existe uma espada coletada e efetua o dano ao inimigo no clique */
     void Update()
     {
-		mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);	
-		distanceMouseToPlayer = new Vector3((mousePosition.x - jogadorTransf.position.x),(mousePosition.y - jogadorTransf.position.y),0);
-        
-		if(Input.GetMouseButtonDown(0) && distanceMouseToPlayer.magnitude <= alcance){
-			transform.position = mousePosition;
-			DamageZone.SetActive(true);
-			Attack.Play();
-			Invoke("DespawnZone", duracao);
-		}else if(Input.GetMouseButtonDown(0) && distanceMouseToPlayer.magnitude > alcance){
-			transform.position = mousePosition;
-			Fizzle.Play();
+		if(jogador != null)
+        {
+			if (jogador.espada == true)
+			{
+				DamageZone.GetComponent<Dano>().dano = 4;
+			}
+
+			mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+			distanceMouseToPlayer = new Vector3((mousePosition.x - jogadorTransf.position.x), (mousePosition.y - jogadorTransf.position.y), 0);
+
+			if (Input.GetMouseButtonDown(0) && distanceMouseToPlayer.magnitude <= alcance)
+			{
+				transform.position = mousePosition;
+				DamageZone.SetActive(true);
+				Attack.Play();
+				Invoke("DespawnZone", duracao);
+			}
+			else if (Input.GetMouseButtonDown(0) && distanceMouseToPlayer.magnitude > alcance)
+			{
+				transform.position = mousePosition;
+				Fizzle.Play();
+			}
 		}
-		
-		
-    }
-	
-	
-	
-	void DespawnZone(){
+	}
+	/* Define a spawnzone como inativa*/
+	void DespawnZone()
+	{
 		DamageZone.SetActive(false);
 	}
 }

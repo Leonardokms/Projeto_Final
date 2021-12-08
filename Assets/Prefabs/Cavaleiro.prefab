@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2525031690857107545}
   - component: {fileID: 2525031690857107538}
   - component: {fileID: 2525031690857107549}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cavaleiro
   m_TagString: Inimigo
   m_Icon: {fileID: 0}

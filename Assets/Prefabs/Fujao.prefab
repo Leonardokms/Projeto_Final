@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1502421176493060285}
   - component: {fileID: 1502421176493060290}
   - component: {fileID: 1502421176493060289}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Fujao
   m_TagString: Inimigo
   m_Icon: {fileID: 0}

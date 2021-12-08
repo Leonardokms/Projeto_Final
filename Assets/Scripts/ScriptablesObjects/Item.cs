@@ -6,10 +6,10 @@ using UnityEngine;
 ///</summary>
 public class Item : ScriptableObject
 {
-    public string NomeObjeto;
-    public Sprite sprite;
-    public int quantidade;
-    public bool empilhavel;
+    public string NomeObjeto;       // Armazea o nome do item
+    public Sprite sprite;           // Armazena a sprite do item
+    public int quantidade;          // Armazena a quantidade que o item representa
+    public bool empilhavel;         // Armazena se o item é empilhável ou não
 
 	/* Enumera os tipos de item possíveis */
     public enum TipoItem

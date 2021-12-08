@@ -9,16 +9,14 @@ public class HealthBar : MonoBehaviour
     public Player caractere;        // receberá o objeto do Player 
     public Image medidorImagem;     // recebe a barra de medição
     public Text pdTexto;            // recebe os dados de PD
-    public float maxPontosDano;            // armazena a variável limite de "sáude" do Player
+    public float maxPontosDano;     // armazena a variável limite de "sáude" do Player
 
-    // Start is called before the first frame update
 	/* Define a quantidade de vida máxima do personagem */
     void Start()
     {
         maxPontosDano = caractere.MaxPontosDano;
     }
 
-    // Update is called once per frame
 	/* Muda o sprite do medidor de vida baseado em quanto o jogador tem atualmente de vida e atualiza o texto de acordo. */
     void Update()
     {

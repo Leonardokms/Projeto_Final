@@ -10,20 +10,21 @@ using UnityEngine.SceneManagement;
 public class Player : Caractere
 {
     public int Vida;
-    public Inventario inventarioPrefab;     // referência ao objeto prefab criado do Inventário
+    public Inventario inventarioPrefab;     // Referência ao objeto prefab criado do Inventário
     Inventario inventario;
-    public HealthBar healthBarPrefab;       // referência ao objeto prefab criado da HealthBar
+    public HealthBar healthBarPrefab;       // Referência ao objeto prefab criado da HealthBar
     HealthBar healthBar;
-    int contador;                           // contador de itens restantes
-    public PontosDano pontosDano;           // tem o valor da "saúde" do objeto script
-    public bool escudo;
-    public ParticleSystem particulasAndar;
-	private Renderer particulasRenderer;
+    int contador;                           // Contador de itens restantes
+    public PontosDano pontosDano;           // Tem o valor da "saúde" do objeto script
+    public bool escudo;                     // Armazena se o jogador tem o escudo ou não
+    public bool espada;                     // Armazena se o jogador tem a espada ou não
+    public ParticleSystem particulasAndar;  // Sistema de partículas para o player andando
+	private Renderer particulasRenderer;    // Renderer para partículas
 	
-	private bool andando;
-	private SpriteRenderer thisSprite;
-	private Animator thisAnimator;
-	private Rigidbody2D thisBody;
+	private bool andando;                   // Armazena se o jogador está andando ou não
+	private SpriteRenderer thisSprite;      // Renderer para sprite do jogador
+	private Animator thisAnimator;          // Animator para jogador
+	private Rigidbody2D thisBody;           // rb2d para jogador
 	
 	/* Assim que o script inicia, instancia um inventário para o jogador, define seus pontos de vida, 
 	 * instancia uma barra de vida para o jogador e associa	este caractere à barra de vida criada */
@@ -48,14 +49,7 @@ public class Player : Caractere
     }
 
     private void Update()
-    {
-        if (pontosDano.valor <= float.Epsilon)
-        {
-            KillCaractere();
-            SceneManager.LoadScene("Cena_Game_Over");
-        }
-		
-		
+    {		
 		if((thisBody.velocity.x != 0 || thisBody.velocity.y != 0)){
 			andando = true;
 			particulasAndar.Play();
@@ -82,8 +76,11 @@ public class Player : Caractere
             pontosDano.valor = pontosDano.valor - dano;
             if(pontosDano.valor <= float.Epsilon)
             {
-                KillCaractere();
-                SceneManager.LoadScene("Lab5_GameOver");
+                if (this != null)
+                {
+                    KillCaractere();
+                }                
+                SceneManager.LoadScene("Cena_Game_Over");
                 break;
             }
             if(intervalo > float.Epsilon)
@@ -116,7 +113,11 @@ public class Player : Caractere
     }
     
 	/* Ao encostar em um item, verifica se é uma moeda ou um coração. 
-	 * Se for uma moeda, adiciona ao inventário. 
+	 * Se for um ouro, adiciona ao inventário.
+	 * Se for uma bota, aumenta a velocidade em 150
+	 * Se for um escudo, diminui o dano recebido
+	 * Se for uma espada, aumenta o dano causado
+	 * Se for uma poção, aumenta a vida máxima em 1 unidade (10 pontos de vida)
 	 * Se for um coração, cura a vida do personagem.
 	 * Ao final, faz o item desaparecer se for o caso.*/
 	
@@ -138,7 +139,7 @@ public class Player : Caractere
                         break;
 
                     case Item.TipoItem.BOTAS:
-                        this.GetComponent<MovPlayer>().Vel += 50;
+                        this.GetComponent<MovPlayer>().Vel += 150;
                         DeveDesaparecer = inventario.AddItem(DanoObjeto);
                         break;
 
@@ -148,6 +149,7 @@ public class Player : Caractere
                         break;
 
                     case Item.TipoItem.ESPADA:
+                        espada = true;
                         DeveDesaparecer = inventario.AddItem(DanoObjeto);
                         break;
 
@@ -194,7 +196,7 @@ public class Player : Caractere
         if (pontosDano.valor < MaxPontosDano)
         {
             pontosDano.valor = pontosDano.valor + quantidade;
-            print("Ajustado PD por: " + quantidade + ". Novo valor = " + pontosDano.valor);
+            print("Vida ajustada por: " + quantidade*10 + ". Novo valor = " + pontosDano.valor*10);
             return true;
         }
         else return false;
